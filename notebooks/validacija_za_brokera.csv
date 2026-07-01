@@ -1,0 +1,31 @@
+klijent_id,naziv,naziv1,starost,je_fizicko_lice,ima_vozacku,postojece_vrste,vrsta_polise,score
+1694,DEJAN,PEJOVIĆ,52.0,1.0,0.0,['0'],vrsta_1,0.9376
+9612,DRAGAN,KOTUR,51.0,1.0,0.0,['5'],vrsta_9,0.8943
+6546,AIDA,JUKIĆ,22.0,1.0,0.0,['7'],vrsta_9,0.8886
+41283,ANELA,ŠABIĆ,72.0,1.0,1.0,['5'],vrsta_9,0.8773
+15970,CVIJETIN,CVIJETINOVIĆ,46.0,1.0,0.0,['1'],vrsta_13,0.8048
+50555,ZDENKA,ĐEKIĆ,41.0,1.0,0.0,['9'],vrsta_13,0.8044
+34705,ŽELJKO,KIŠIĆ,19.0,1.0,0.0,['9'],vrsta_13,0.8026
+46313,HALIL,MEŠINOVIĆ,-258.0,0.0,0.0,['7'],vrsta_0,0.7859
+2219,"""DENTAL SM"" d.o.o. Banja Luka",,,1.0,0.0,"['1', '5', '6', '8']",vrsta_7,0.7827
+1850,"""BAKAL TURING"", Velimir Bakal, s.p. Laktaši",,,0.0,0.0,['0'],vrsta_9,0.7423
+7129,OPŠTINSKA UPRAVA OPŠTINE KNEŽEVO,,,1.0,0.0,['5'],vrsta_9,0.7382
+37380,ANASTASIJA,MIRKOVIĆ,27.0,1.0,0.0,['7'],vrsta_9,0.7011
+6078,HD RAZVOJ d.o.o. PODRUŽNICA 1 Banja Luka,,,1.0,0.0,['7'],vrsta_9,0.6859
+14975,RATKO,BERDOVIĆ,55.0,1.0,0.0,['9'],vrsta_1,0.6766
+7715,VINOPOLIS CAFE BAR I SOBE/STEVO POPOVAC,,,1.0,1.0,['11'],vrsta_1,0.6546
+2077,LAURUS d.o.o. Ljubuški,,,1.0,0.0,['0'],vrsta_7,0.6538
+37410,Andrija ,Nikolić,66.0,1.0,0.0,['7'],vrsta_15,0.6353
+48923,SRĐAN,LALIĆ,-399.0,0.0,0.0,['9'],vrsta_13,0.5964
+40510,SENAD,ALIĆ,53.0,1.0,1.0,['1'],vrsta_22,0.5906
+43823,DUŠAN,NIKIĆ,51.0,1.0,0.0,['6'],vrsta_13,0.5649
+16789,SUZANA,MAKSIMOVIĆ,45.0,1.0,0.0,['15'],vrsta_5,0.5511
+15327,NESIBA,ĐULOVIĆ,31.0,1.0,0.0,['15'],vrsta_7,0.5493
+47944,STOJIĆ,VIDA,50.0,1.0,0.0,['15'],vrsta_7,0.495
+50615,SAMIR,SALIBAŠIĆ,24.0,1.0,1.0,['1'],vrsta_17,0.4812
+28979,ADMIR,ŠTETA,30.0,1.0,1.0,['1'],vrsta_6,0.4763
+13621,RANKA,ÐURIČIĆ,66.0,1.0,0.0,['15'],vrsta_4,0.3584
+18816,SVETOZAR,ILIKIĆ,58.0,1.0,0.0,['15'],vrsta_7,0.3145
+44524,EMINA,HRUSTIĆ,59.0,1.0,0.0,['15'],vrsta_9,0.248
+38488,ASMIR,ČUBARA,30.0,1.0,0.0,['15'],vrsta_9,0.2335
+50279,DOBRILA,TAMAMOVIĆ,31.0,1.0,1.0,['15'],vrsta_7,0.201
