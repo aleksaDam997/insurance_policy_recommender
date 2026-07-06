@@ -17,6 +17,7 @@ pyarrow
 voila
 
 python-dotenv
+ensure
 certifi
 mysql-connector-python
 SQLAlchemy

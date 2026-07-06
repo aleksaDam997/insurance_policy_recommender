@@ -1,0 +1,874 @@
+schema:
+
+  new_polisa:
+    type: object
+    source_file: new_polisa.csv
+    columns:
+      ponuda_id:
+        type: integer
+        dtype: Int32
+        required: true
+        dtype_cast: Int32
+        pipeline_role: join_key
+
+      polisa_id:
+        type: integer
+        dtype: Int32
+        required: true
+        pipeline_role: hard_filter
+
+      sif_vrsta:
+        type: integer
+        dtype: Int32
+        required: true
+        pipeline_role: label_key
+
+      polisa_no:
+        type: integer
+        dtype: Int32
+        required: false
+        used_by_pipeline: false
+
+      broker_id:
+        type: integer
+        dtype: Int32
+        required: false
+        used_by_pipeline: false
+
+      sif_org_jed:
+        type: integer
+        dtype: Int32
+        required: false
+        used_by_pipeline: false
+
+      zamena_polise_no:
+        type: integer
+        dtype: Int32
+        required: false
+        used_by_pipeline: true
+
+      ind_zamena:
+        type: string
+        dtype: string
+        required: false
+        used_by_pipeline: true
+
+      sif_preuzmi:
+        type: integer
+        dtype: Int32
+        required: false
+        used_by_pipeline: false
+
+      preuzmi_no:
+        type: integer
+        dtype: Int32
+        required: false
+        used_by_pipeline: false
+
+      preuzmi_id:
+        type: integer
+        dtype: Int32
+        required: false
+        used_by_pipeline: false
+
+      ugo_jmbg:
+        type: string
+        dtype: string
+        required: false
+        dtype_cast: str
+
+      ugo_svojina:
+        type: integer
+        dtype: Int32
+        required: false
+        used_by_pipeline: false
+
+      ugo_naziv:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_naziv1:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_ulica:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_kuc_br:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_mesto:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_posta:
+        type: integer
+        dtype: Int32
+        required: false
+
+      ugo_kanton:
+        type: integer
+        dtype: Int32
+        required: false
+
+      ugo_opstina:
+        type: integer
+        dtype: Int32
+        required: false
+
+      ugo_mesto_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      ugo_telefon1:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_telefon2:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_mail:
+        type: string
+        dtype: string
+        required: false
+
+      osig_jmbg:
+        type: string
+        dtype: string
+        required: false
+
+      osig_svojina:
+        type: integer
+        dtype: Int32
+        required: false
+
+      osig_naziv:
+        type: string
+        dtype: string
+        required: false
+
+      osig_naziv1:
+        type: string
+        dtype: string
+        required: false
+
+      osig_ulica:
+        type: string
+        dtype: string
+        required: false
+
+      osig_kuc_br:
+        type: string
+        dtype: string
+        required: false
+
+      osig_mesto:
+        type: string
+        dtype: string
+        required: false
+
+      osig_posta:
+        type: integer
+        dtype: Int32
+        required: false
+
+      osig_kanton:
+        type: integer
+        dtype: Int32
+        required: false
+
+      osig_opstina:
+        type: integer
+        dtype: Int32
+        required: false
+
+      osig_mesto_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      osig_telefon1:
+        type: string
+        dtype: string
+        required: false
+
+      osig_telefon2:
+        type: string
+        dtype: string
+        required: false
+
+      osig_mail:
+        type: string
+        dtype: string
+        required: false
+
+      sif_trajanja:
+        type: integer
+        dtype: Int32
+        required: false
+
+      dat_od_ug:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      dat_do_ug:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      dat_od:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      dat_do:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      time_od:
+        type: string
+        dtype: string
+        required: false
+
+      time_do:
+        type: string
+        dtype: string
+        required: false
+
+      br_dana:
+        type: integer
+        dtype: Int32
+        required: false
+
+      mesto_izdavanja:
+        type: string
+        dtype: string
+        required: false
+
+      dat_izdavanja:
+        type: datetime
+        dtype: datetime
+        required: true
+        pipeline_role: temporal_key
+
+      mjesto_izdavanja:
+        type: string
+        dtype: string
+        required: false
+
+      napomena:
+        type: string
+        dtype: string
+        required: false
+
+      napomena_auto:
+        type: string
+        dtype: string
+        required: false
+
+      napomena1:
+        type: string
+        dtype: string
+        required: false
+
+      p_oper:
+        type: integer
+        dtype: Int32
+        required: false
+
+      p_date:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      p_session_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      sif_nac_plac:
+        type: integer
+        dtype: Int32
+        required: false
+
+      br_rata:
+        type: integer
+        dtype: Int32
+        required: false
+
+      dat_prve_rate:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      sif_napomena:
+        type: integer
+        dtype: Int32
+        required: false
+
+      premija_ukupno:
+        type: float
+        dtype: Float64
+        required: false
+
+      opis_osiguravac:
+        type: string
+        dtype: string
+        required: false
+
+      ind_user_skadenca:
+        type: string
+        dtype: string
+        required: false
+
+      ind_obracun:
+        type: string
+        dtype: string
+        required: false
+
+      suma_osiguranja:
+        type: float
+        dtype: Float64
+        required: false
+
+      polisa_tarifa:
+        type: string
+        dtype: string
+        required: false
+
+      veza_polise_no:
+        type: string
+        dtype: string
+        required: false
+
+      ind_lock_skadenca:
+        type: string
+        dtype: string
+        required: false
+
+      miro_polisa_no:
+        type: integer
+        dtype: Int32
+        required: false
+
+      uw_indikator:
+        type: string
+        dtype: string
+        required: false
+
+      ind_uw_kontrola:
+        type: string
+        dtype: string
+        required: false
+
+      ind_dug:
+        type: string
+        dtype: string
+        required: false
+
+      ind_steta:
+        type: string
+        dtype: string
+        required: false
+
+      registarski_broj_polise:
+        type: string
+        dtype: string
+        required: false
+
+      akcija_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      ind_nepravilni_otp_plan:
+        type: string
+        dtype: string
+        required: false
+
+      king_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      konacna_premija:
+        type: float
+        dtype: Float64
+        required: false
+
+      osig_br_pasosa:
+        type: string
+        dtype: string
+        required: false
+
+      osig_isprava:
+        type: string
+        dtype: string
+        required: false
+
+      sif_bankovni_racun:
+        type: integer
+        dtype: Int32  
+        required: false
+
+      sif_datum_dospeca:
+        type: integer
+        dtype: Int32
+        required: false
+
+      sif_ikanton:
+        type: integer
+        dtype: Int32
+        required: false
+      
+      sif_iopstina:
+        type: integer
+        dtype: Int32
+        required: false
+      ugo_br_pasosa:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_del:
+        type: string
+        dtype: string
+        required: false
+
+      ugo_isprava:
+        type: string
+        dtype: string
+        required: false
+
+  new_polisa_klijent:
+    type: object
+    source_file: new_polisa_klijent.csv
+    columns:
+
+      ponuda_id:
+        type: integer
+        dtype: Int32
+        required: true
+        pipeline_role: join_key
+
+      sif_uloga:
+        type: integer
+        dtype: Int32
+        required: true
+        pipeline_role: hard_filter
+
+      osig_jmbg:
+        type: string
+        dtype: string
+        required: false
+
+      klijent_id:
+        type: integer
+        dtype: Int32
+        required: true
+        pipeline_role: join_key
+
+      osig_opstina:
+        type: integer
+        dtype: Int32
+        required: false
+
+      br_pasosa:
+        type: string
+        dtype: string
+        required: false
+
+      datum_rodjenja:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      pol_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      dat_vozacke:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      sif_delatnost:
+        type: integer
+        dtype: Int32
+        required: false
+
+      nedef_delatnost:
+        type: string
+        dtype: string
+        required: false
+
+      sif_bracni_status:
+        type: integer
+        dtype: Int32
+        required: false
+      drzava_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      ind_info_ponuda:
+        type: string
+        dtype: string 
+        required: false
+
+      king_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      mesto_rodj:
+        type: string
+        dtype: string
+        required: false
+
+      osig_kanton:
+        type: integer
+        dtype: Int32
+        required: false
+
+      osig_kuc_br:
+        type: string
+        dtype: string
+        required: false
+
+      osig_mail:
+        type: string
+        dtype: string
+        required: false
+
+      osig_mesto:
+        type: string
+        dtype: string
+        required: false
+
+      osig_mesto_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      osig_naziv:
+        type: string  
+        dtype: string
+        required: false
+
+      osig_naziv1:
+        type: string
+        dtype: string
+        required: false
+
+      osig_posta:
+        type: integer
+        dtype: Int32
+        required: false 
+
+      osig_svojina:
+        type: string
+        dtype: string
+        required: false
+
+      osig_telefon1:
+        type: string
+        dtype: string
+        required: false
+
+      osig_telefon2:
+        type: string
+        dtype: string
+        required: false
+
+      osig_ulica:
+        type: string
+        dtype: string
+        required: false
+
+      procenat:
+        type: float
+        dtype: Float64
+        required: false
+
+      redni_br:
+        type: integer
+        dtype: Int32
+        required: false
+
+      sif_mj:
+        type: integer
+        dtype: Int32
+        required: false
+
+  ins_klijent:
+    type: object
+    source_file: __ins_klijenti.csv
+    columns:
+
+      klijent_id:
+        type: integer
+        dtype: Int32
+        required: true
+        pipeline_role: join_key
+
+      mat_br:
+        type: string
+        dtype: string
+        required: false
+
+      ind_rezident:
+        type: string
+        dtype: string
+        required: false
+
+      ind_stranac:
+        type: string
+        dtype: string
+        required: false
+
+      br_pasosa:
+        type: string
+        dtype: string
+        required: false
+
+      datum_rodjenja:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      pol_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      dat_vozacke:
+        type: datetime
+        dtype: datetime
+        required: false
+
+      drzava_id:
+        type: integer
+        dtype: Int32
+        required: false
+      mesto_rodj:
+        type: string
+        dtype: string
+        required: false
+
+      king_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      naziv1:
+        type: string
+        dtype: string
+        required: false
+      nedef_delatnost:
+        type: string
+        dtype: string
+        required: false
+
+      sif_bracni_status:
+        type: integer
+        dtype: Int32
+        required: false
+      sif_delatnost:
+        type: integer
+        dtype: Int32
+        required: false
+      sif_svojina:
+        type: integer
+        dtype: Int32
+        required: false
+
+  tsif_vrsta:
+    type: object
+    source_file: tsif_vrsta.csv
+    columns:
+
+      sif_vrsta:
+        type: integer
+        dtype: Int32
+        required: true
+        pipeline_role: join_key
+
+      ind_polisa:
+        type: string
+        dtype: string
+        required: true
+        pipeline_role: hard_filter
+      ind_akt:
+        type: string 
+        dtype: string
+        required: false
+
+      ind_blok:
+        type: string
+        dtype: string
+        required: false
+      ind_cent:
+        type: string
+        dtype: string
+        required: false
+
+      ind_empty:
+        type: string
+        dtype: string
+        required: false
+
+      ind_fin_analitika:
+        type: string
+        dtype: string
+        required: false
+
+      ind_foto:
+        type: string
+        dtype: string
+        required: false
+
+      ind_kontrola_upl:
+        type: string
+        dtype: string
+        required: false
+
+      ind_takse:
+        type: string
+        dtype: string
+        required: false
+
+      ind_tehnicki:
+        type: string
+        dtype: string
+        required: false
+
+      kasko:
+        type: string
+        dtype: string
+        required: false
+
+      kontrola_polisa_od:
+        type: string
+        dtype: string
+        required: false
+
+      korisnik_id:
+        type: integer
+        dtype: Int32
+        required: false
+
+      len_no:
+        type: integer
+        dtype: Int32
+        required: false
+
+      modul:
+        type: string
+        dtype: string
+        required: false
+
+      opis:
+        type: string
+        dtype: string
+        required: false
+
+      poc_polisa_no:
+        type: integer
+        dtype: Int32
+        required: false
+
+      sif_export:
+        type: integer
+        dtype: Int32
+        required: false
+
+      sif_old:
+        type: integer
+        dtype: Int32
+        required: false
+
+      sif_polisa_vrsta:
+        type: integer
+        dtype: Int32
+        required: false
+
+      sif_vrsta_uniqa:
+        type: integer
+        dtype: Int32
+        required: false
+
+      skr_opis:
+        type: string
+        dtype: string
+        required: false
+
+      var_poreza:
+        type: string
+        dtype: string
+        required: false
+
+      where_do:
+        type: string
+        dtype: string
+        required: false
+      where_do1:
+        type: string
+        dtype: string
+        required: false
+
+      where_kontrola:
+        type: string
+        dtype: string
+        required: false
+
+      where_nalog:
+        type: string
+        dtype: string
+        required: false
+
+      where_od:
+        type: string
+        dtype: string
+        required: false
+
+      where_od1:
+        type: string
+        dtype: string
+        required: false
+
+  new_polisa_uloga:
+    type: object
+    source_file: new_polisa_uloga.csv
+    columns:
+
+      sif_uloga:
+        type: integer
+        dtype: Int32
+        required: true
+        pipeline_role: join_key
+
+      opis:
+        type: string
+        dtype: string
+        required: true
+        pipeline_role: hard_filter
+
+      king_id:
+        type: integer
+        dtype: Int32
+        required: false

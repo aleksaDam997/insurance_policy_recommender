@@ -1,0 +1,141 @@
+
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <meta charset="utf-8">
+                <title>Schema Validation Report</title>
+
+                <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                    background: #f5f5f5;
+                }
+
+                .card {
+                    background: white;
+                    border-radius: 8px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                }
+
+                .status {
+                    background: #28a745;
+                    color: white;
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .summary {
+                    display: flex;
+                    gap: 15px;
+                }
+
+                .summary-box {
+                    flex: 1;
+                    text-align: center;
+                    background: #f8f9fa;
+                    padding: 15px;
+                    border-radius: 6px;
+                }
+
+                .summary-number {
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+
+                .error {
+                    color: #dc3545;
+                }
+
+                .warning {
+                    color: #ff9800;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                th {
+                    background: #343a40;
+                    color: white;
+                    padding: 10px;
+                    text-align: left;
+                }
+
+                td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                }
+
+                tr:nth-child(even) {
+                    background: #f8f9fa;
+                }
+                </style>
+                </head>
+                <body>
+
+                <div class="card status">
+                    Schema Validation: VALIDNO
+                </div>
+
+                <div class="card">
+                    <h2>Sažetak</h2>
+
+                    <div class="summary">
+                        <div class="summary-box">
+                            <div class="summary-number">0</div>
+                            <div>Greške</div>
+                        </div>
+
+                        <div class="summary-box">
+                            <div class="summary-number">1</div>
+                            <div>Upozorenja</div>
+                        </div>
+
+                        <div class="summary-box">
+                            <div class="summary-number">1</div>
+                            <div>Višak kolona</div>
+                        </div>
+
+                        <div class="summary-box">
+                            <div class="summary-number">167</div>
+                            <div>Korištene kolone</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                <h2>Greške</h2>
+            <p>Nema grešaka.</p></div>
+                <div class="card">
+                <h2>Upozorenja</h2>
+            <ul><li class='warning'>[ins_klijent] Kolone u CSV-u koje NISU definisane u schema.yaml: [&#x27;naziv&#x27;]</li></ul></div>
+                <div class="card">
+                <h2>Kolone koje postoje u CSV-u a nisu u schema.yaml</h2>
+
+                <table>
+                <tr>
+                <th>Kolona</th>
+                </tr>
+                <tr><td>[ins_klijent] [&#x27;naziv&#x27;]</td></tr>
+                </table>
+                </div>
+                
+                <div class="card">
+                <h2>Korištene kolone</h2>
+
+                <table>
+                <tr>
+                <th>Kolona</th>
+                </tr>
+                <tr><td>[new_polisa] ponuda_id</td></tr><tr><td>[new_polisa] polisa_id</td></tr><tr><td>[new_polisa] sif_vrsta</td></tr><tr><td>[new_polisa] polisa_no</td></tr><tr><td>[new_polisa] broker_id</td></tr><tr><td>[new_polisa] sif_org_jed</td></tr><tr><td>[new_polisa] zamena_polise_no</td></tr><tr><td>[new_polisa] ind_zamena</td></tr><tr><td>[new_polisa] sif_preuzmi</td></tr><tr><td>[new_polisa] preuzmi_no</td></tr><tr><td>[new_polisa] preuzmi_id</td></tr><tr><td>[new_polisa] ugo_jmbg</td></tr><tr><td>[new_polisa] ugo_svojina</td></tr><tr><td>[new_polisa] ugo_naziv</td></tr><tr><td>[new_polisa] ugo_naziv1</td></tr><tr><td>[new_polisa] ugo_ulica</td></tr><tr><td>[new_polisa] ugo_kuc_br</td></tr><tr><td>[new_polisa] ugo_mesto</td></tr><tr><td>[new_polisa] ugo_posta</td></tr><tr><td>[new_polisa] ugo_kanton</td></tr><tr><td>[new_polisa] ugo_opstina</td></tr><tr><td>[new_polisa] ugo_mesto_id</td></tr><tr><td>[new_polisa] ugo_telefon1</td></tr><tr><td>[new_polisa] ugo_telefon2</td></tr><tr><td>[new_polisa] ugo_mail</td></tr><tr><td>[new_polisa] osig_jmbg</td></tr><tr><td>[new_polisa] osig_svojina</td></tr><tr><td>[new_polisa] osig_naziv</td></tr><tr><td>[new_polisa] osig_naziv1</td></tr><tr><td>[new_polisa] osig_ulica</td></tr><tr><td>[new_polisa] osig_kuc_br</td></tr><tr><td>[new_polisa] osig_mesto</td></tr><tr><td>[new_polisa] osig_posta</td></tr><tr><td>[new_polisa] osig_kanton</td></tr><tr><td>[new_polisa] osig_opstina</td></tr><tr><td>[new_polisa] osig_mesto_id</td></tr><tr><td>[new_polisa] osig_telefon1</td></tr><tr><td>[new_polisa] osig_telefon2</td></tr><tr><td>[new_polisa] osig_mail</td></tr><tr><td>[new_polisa] sif_trajanja</td></tr><tr><td>[new_polisa] dat_od_ug</td></tr><tr><td>[new_polisa] dat_do_ug</td></tr><tr><td>[new_polisa] dat_od</td></tr><tr><td>[new_polisa] dat_do</td></tr><tr><td>[new_polisa] time_od</td></tr><tr><td>[new_polisa] time_do</td></tr><tr><td>[new_polisa] br_dana</td></tr><tr><td>[new_polisa] mesto_izdavanja</td></tr><tr><td>[new_polisa] dat_izdavanja</td></tr><tr><td>[new_polisa] mjesto_izdavanja</td></tr><tr><td>[new_polisa] napomena</td></tr><tr><td>[new_polisa] napomena_auto</td></tr><tr><td>[new_polisa] napomena1</td></tr><tr><td>[new_polisa] p_oper</td></tr><tr><td>[new_polisa] p_date</td></tr><tr><td>[new_polisa] p_session_id</td></tr><tr><td>[new_polisa] sif_nac_plac</td></tr><tr><td>[new_polisa] br_rata</td></tr><tr><td>[new_polisa] dat_prve_rate</td></tr><tr><td>[new_polisa] sif_napomena</td></tr><tr><td>[new_polisa] premija_ukupno</td></tr><tr><td>[new_polisa] opis_osiguravac</td></tr><tr><td>[new_polisa] ind_user_skadenca</td></tr><tr><td>[new_polisa] ind_obracun</td></tr><tr><td>[new_polisa] suma_osiguranja</td></tr><tr><td>[new_polisa] polisa_tarifa</td></tr><tr><td>[new_polisa] veza_polise_no</td></tr><tr><td>[new_polisa] ind_lock_skadenca</td></tr><tr><td>[new_polisa] miro_polisa_no</td></tr><tr><td>[new_polisa] uw_indikator</td></tr><tr><td>[new_polisa] ind_uw_kontrola</td></tr><tr><td>[new_polisa] ind_dug</td></tr><tr><td>[new_polisa] ind_steta</td></tr><tr><td>[new_polisa] registarski_broj_polise</td></tr><tr><td>[new_polisa] akcija_id</td></tr><tr><td>[new_polisa] ind_nepravilni_otp_plan</td></tr><tr><td>[new_polisa] king_id</td></tr><tr><td>[new_polisa] konacna_premija</td></tr><tr><td>[new_polisa] osig_br_pasosa</td></tr><tr><td>[new_polisa] osig_isprava</td></tr><tr><td>[new_polisa] sif_bankovni_racun</td></tr><tr><td>[new_polisa] sif_datum_dospeca</td></tr><tr><td>[new_polisa] sif_ikanton</td></tr><tr><td>[new_polisa] sif_iopstina</td></tr><tr><td>[new_polisa] ugo_br_pasosa</td></tr><tr><td>[new_polisa] ugo_del</td></tr><tr><td>[new_polisa] ugo_isprava</td></tr><tr><td>[new_polisa_klijent] ponuda_id</td></tr><tr><td>[new_polisa_klijent] sif_uloga</td></tr><tr><td>[new_polisa_klijent] osig_jmbg</td></tr><tr><td>[new_polisa_klijent] klijent_id</td></tr><tr><td>[new_polisa_klijent] osig_opstina</td></tr><tr><td>[new_polisa_klijent] br_pasosa</td></tr><tr><td>[new_polisa_klijent] datum_rodjenja</td></tr><tr><td>[new_polisa_klijent] pol_id</td></tr><tr><td>[new_polisa_klijent] dat_vozacke</td></tr><tr><td>[new_polisa_klijent] sif_delatnost</td></tr><tr><td>[new_polisa_klijent] nedef_delatnost</td></tr><tr><td>[new_polisa_klijent] sif_bracni_status</td></tr><tr><td>[new_polisa_klijent] drzava_id</td></tr><tr><td>[new_polisa_klijent] ind_info_ponuda</td></tr><tr><td>[new_polisa_klijent] king_id</td></tr><tr><td>[new_polisa_klijent] mesto_rodj</td></tr><tr><td>[new_polisa_klijent] osig_kanton</td></tr><tr><td>[new_polisa_klijent] osig_kuc_br</td></tr><tr><td>[new_polisa_klijent] osig_mail</td></tr><tr><td>[new_polisa_klijent] osig_mesto</td></tr><tr><td>[new_polisa_klijent] osig_mesto_id</td></tr><tr><td>[new_polisa_klijent] osig_naziv</td></tr><tr><td>[new_polisa_klijent] osig_naziv1</td></tr><tr><td>[new_polisa_klijent] osig_posta</td></tr><tr><td>[new_polisa_klijent] osig_svojina</td></tr><tr><td>[new_polisa_klijent] osig_telefon1</td></tr><tr><td>[new_polisa_klijent] osig_telefon2</td></tr><tr><td>[new_polisa_klijent] osig_ulica</td></tr><tr><td>[new_polisa_klijent] procenat</td></tr><tr><td>[new_polisa_klijent] redni_br</td></tr><tr><td>[new_polisa_klijent] sif_mj</td></tr><tr><td>[ins_klijent] klijent_id</td></tr><tr><td>[ins_klijent] mat_br</td></tr><tr><td>[ins_klijent] ind_rezident</td></tr><tr><td>[ins_klijent] ind_stranac</td></tr><tr><td>[ins_klijent] br_pasosa</td></tr><tr><td>[ins_klijent] datum_rodjenja</td></tr><tr><td>[ins_klijent] pol_id</td></tr><tr><td>[ins_klijent] dat_vozacke</td></tr><tr><td>[ins_klijent] drzava_id</td></tr><tr><td>[ins_klijent] mesto_rodj</td></tr><tr><td>[ins_klijent] king_id</td></tr><tr><td>[ins_klijent] naziv1</td></tr><tr><td>[ins_klijent] nedef_delatnost</td></tr><tr><td>[ins_klijent] sif_bracni_status</td></tr><tr><td>[ins_klijent] sif_delatnost</td></tr><tr><td>[ins_klijent] sif_svojina</td></tr><tr><td>[tsif_vrsta] sif_vrsta</td></tr><tr><td>[tsif_vrsta] ind_polisa</td></tr><tr><td>[tsif_vrsta] ind_akt</td></tr><tr><td>[tsif_vrsta] ind_blok</td></tr><tr><td>[tsif_vrsta] ind_cent</td></tr><tr><td>[tsif_vrsta] ind_empty</td></tr><tr><td>[tsif_vrsta] ind_fin_analitika</td></tr><tr><td>[tsif_vrsta] ind_foto</td></tr><tr><td>[tsif_vrsta] ind_kontrola_upl</td></tr><tr><td>[tsif_vrsta] ind_takse</td></tr><tr><td>[tsif_vrsta] ind_tehnicki</td></tr><tr><td>[tsif_vrsta] kasko</td></tr><tr><td>[tsif_vrsta] kontrola_polisa_od</td></tr><tr><td>[tsif_vrsta] korisnik_id</td></tr><tr><td>[tsif_vrsta] len_no</td></tr><tr><td>[tsif_vrsta] modul</td></tr><tr><td>[tsif_vrsta] opis</td></tr><tr><td>[tsif_vrsta] poc_polisa_no</td></tr><tr><td>[tsif_vrsta] sif_export</td></tr><tr><td>[tsif_vrsta] sif_old</td></tr><tr><td>[tsif_vrsta] sif_polisa_vrsta</td></tr><tr><td>[tsif_vrsta] sif_vrsta_uniqa</td></tr><tr><td>[tsif_vrsta] skr_opis</td></tr><tr><td>[tsif_vrsta] var_poreza</td></tr><tr><td>[tsif_vrsta] where_do</td></tr><tr><td>[tsif_vrsta] where_do1</td></tr><tr><td>[tsif_vrsta] where_kontrola</td></tr><tr><td>[tsif_vrsta] where_nalog</td></tr><tr><td>[tsif_vrsta] where_od</td></tr><tr><td>[tsif_vrsta] where_od1</td></tr><tr><td>[new_polisa_uloga] sif_uloga</td></tr><tr><td>[new_polisa_uloga] opis</td></tr><tr><td>[new_polisa_uloga] king_id</td></tr>
+                </table>
+                </div>
+
+                </body>
+                </html>
+                

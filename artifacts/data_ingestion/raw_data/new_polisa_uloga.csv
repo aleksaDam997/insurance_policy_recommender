@@ -1,0 +1,23 @@
+"sif_uloga","opis","king_id"
+8,Platiša+Osigurana osoba,6
+9,Platiša,2
+10,Ugovarač,1
+11,Ugovarač+Platiša,3
+12,Ugovarač+Platiša+Vlasnik,515
+13,Ugovarač+Platiša+Osig.osoba,7
+14,Ugovarač+Osigurana osoba,5
+20,Osiguranik,512
+21,Osigurana osoba,4
+22,Osiguranik+Platiša,514
+40,Vinkulant,64
+41,Saosiguranje,16
+42,Konkurentno osiguranje,32
+43,Zdravstveni uređaji i liječnik,128
+44,Korisnik vozila,256
+45,Dijete,1024
+46,Fakultativni partner,2048
+47,Posrednik,4096
+48,Glavni saosiguratelj,32768
+49,Ovlašćeno lice,524288
+50,Reosiguratelj,131072
+51,Kanal,1048576

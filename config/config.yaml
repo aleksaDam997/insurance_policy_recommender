@@ -2,6 +2,10 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://raw.githubusercontent.com/ageron/handson-ml2/master/datasets/housing/housing.tgz
-  local_data_file: housing.tgz
-  unzip_dir: housing
+  raw_data_dir: artifacts/data_ingestion/raw_data
+  source_path: data/data_from_db_as_csv/production
+  
+data_validation:
+  root_dir: artifacts/data_validation
+  report_file_path: artifacts/data_validation/report.yaml
+  report_page_file_path: artifacts/data_validation/report.html

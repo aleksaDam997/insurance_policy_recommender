@@ -1,0 +1,29 @@
+"sif_vrsta","opis","len_no","skr_opis","modul","ind_polisa","var_poreza","kasko","ind_tehnicki","ind_kontrola_upl","ind_fin_analitika","ind_akt","sif_export","korisnik_id","sif_vrsta_uniqa","sif_polisa_vrsta","poc_polisa_no","kontrola_polisa_od","ind_foto","ind_takse","where_kontrola","where_nalog","where_od","where_do","where_od1","where_do1","ind_blok","ind_empty","ind_cent","sif_old"
+43,MSP.Trgov.Ugostitelj,10,MSP.TRG.UGOST,0,D,2,N,N,D,N,N,0,0,0,0,0,0,D,N,"","",0,999999999,0,999999999,D,N,N,43
+42,MSP.Zants.Usluge,10,MSP.ZAN.USLUG,0,D,2,N,N,D,N,N,0,0,0,0,0,0,D,N,"","",0,999999999,0,999999999,D,N,N,42
+40,Nezgoda-Dom.Ind,10,NEZ.Do.Ind,0,D,2,N,N,D,N,N,0,0,0,0,0,0,D,N,"","",200000,999999,200000,999999999,D,N,N,40
+32,Komisioni ugovor,10,KOMIS,0,N,2,N,N,N,N,N,0,0,0,0,0,0,D,N,"","",0,999999999,0,999999999,N,N,N,32
+31,Mjenica,12,MJEN,0,N,0,N,N,N,N,N,0,0,0,0,0,0,D,N,"","",0,999999999,0,999999999,N,N,N,31
+30,Kupoprodajni ugovor,9,KUP.U.,0,N,0,N,N,N,N,N,0,0,0,0,0,0,D,N,"","",0,999999999,0,999999999,N,N,N,30
+22,Asistencija,10,ASIST,0,D,2,N,N,D,N,D,0,0,0,0,4000000,4000000,D,N,"",__40L0,0,999999999,0,999999999,N,N,N,22
+21,Obrasci tehničkog pregleda,10,OT,0,N,0,N,N,N,N,N,0,0,0,0,0,0,D,N,"","",0,999999999,0,999999999,N,N,N,21
+20,Ponuda Paket rizika,10,PONUDA.PR,0,D,2,N,N,D,N,N,0,0,0,0,0,0,D,N,,,0,99999999,0,99999999,N,D,N,20
+19,Odgovor.mali preduzetnici,10,ODG.MAL.PRED.,0,D,2,N,N,D,N,N,0,0,0,0,0,0,D,N,,,0,99999999,0,99999999,D,N,N,19
+18,Odgovor.Fiz lica,10,ODG.FIZ.LICA,0,D,2,N,N,D,N,N,0,0,0,0,0,0,D,N,,,0,99999999,0,99999999,D,N,N,18
+17,Zaštita Bonusa AO,10,BPONUS.AO,0,D,2,N,N,D,N,D,0,0,0,0,0,0,D,N,,,0,999999999,0,999999999,N,N,N,17
+16,Pomoć na putu,10,PNP,0,D,2,N,N,D,N,N,0,0,0,0,0,1006,D,N,"","",0,999999999,0,999999999,N,N,N,16
+15,Banko osiguranje,10,BO,0,D,2,N,N,D,N,D,0,0,0,0,0,69501,D,N,"","",0,999999999,0,999999999,N,N,N,15
+14,AllRisk,10,AllR,0,D,2,N,N,D,N,N,0,0,0,0,0,61001,D,N,"","",0,999999999,0,999999999,N,N,N,14
+13,Paket rizika,10,PR,0,D,2,N,N,D,N,D,0,0,0,0,0,1000,D,N,"",__40J0,0,999999999,0,999999999,D,N,N,13
+12,Dopunsko zdravstveno,10,DZO,0,D,2,N,N,D,N,D,0,0,0,0,0,4301,D,N,"","",0,999999999,0,999999999,N,N,N,12
+10,Porodično osiguranje,10,POR.O.,0,D,2,N,N,D,D,N,0,0,0,0,0,0,D,N,"","",0,999999999,0,999999999,N,N,N,10
+7,Putno zdravstveno,8,PZO,0,D,2,N,N,D,N,D,0,0,0,0,0,63701,D,N,"","",0,999999999,0,999999999,N,N,N,7
+6,Kasko ,8,AK,0,D,2,N,N,D,D,D,0,0,0,0,100000,30001,D,N,"",__40E0,0,999999999,0,999999999,N,N,N,6
+5,Nezgoda,8,KN,0,D,2,N,N,D,D,D,0,0,0,0,0,69501,D,N,"","",0,199999,0,199999,N,N,N,5
+2,Zelena karta,8,ZK,0,D,2,N,N,D,N,D,0,0,0,0,0,517001,D,N,"","",0,999999999,0,999999999,N,N,N,2
+1,Autoodgovornost,8,AO1,0,D,2,N,D,D,N,D,0,0,0,0,0,615001,D,D,"",__40A0,0,999999999,0,999999999,N,N,N,1
+23,PUJP,8,PUJP,0,D,2,N,N,D,D,D,0,0,0,0,100000,30001,D,N,"",__40E0,0,999999999,0,999999999,N,N,N,11
+8,Imovina,8,IMO,0,D,2,N,N,D,N,D,0,0,0,0,0,63701,D,N,"","",0,999999999,0,999999999,N,N,N,8
+4,Granično,8,GR,0,D,2,N,N,D,N,D,0,0,0,0,0,517001,D,N,"","",0,999999999,0,999999999,N,N,N,9
+9,Siguran dom,8,SD,0,D,2,N,N,D,N,D,0,0,0,0,0,63701,D,N,"","",0,999999999,0,999999999,N,N,N,13
+11,Mozaik,8,MK,0,D,2,N,N,D,N,D,0,0,0,0,0,63701,D,N,"","",0,999999999,0,999999999,N,N,N,41

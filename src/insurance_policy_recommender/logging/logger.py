@@ -28,3 +28,5 @@ logging.basicConfig(
     level=LOG_LEVEL,
     format=LOG_FORMAT,
 )
+
+logger = logging.getLogger("src.insurance_policy_recommender")
