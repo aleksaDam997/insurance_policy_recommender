@@ -11,7 +11,7 @@ from pathlib import Path
 @ensure_annotations
 def read_yaml(file_path: Path) -> dict:
     try:
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding="utf-8") as file:
             return yaml.safe_load(file)
     except Exception as e:
         logger.error(f"Error reading YAML file {file_path}: {e}")
@@ -20,7 +20,7 @@ def read_yaml(file_path: Path) -> dict:
 @ensure_annotations
 def write_yaml(data: dict, file_path: Path):
     try:
-        with open(file_path, 'w') as file:
+        with open(file_path, 'w', encoding="utf-8") as file:
             yaml.safe_dump(data, file)
     except Exception as e:
         logger.error(f"Error writing YAML file {file_path}: {e}")
@@ -114,10 +114,10 @@ def load_json(path: Path) -> dict[str, any]:
     
 
 @ensure_annotations
-def write_into_file(data: str, file_path: Path):
+def write_into_file(content: str, file_path: Path):
     try:
-        with open(file_path, 'w') as file:
-            file.write(str(data))
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(content)
         logger.info(f"Data written to file at: {file_path}")
     except Exception as e:
         logger.error(f"Error writing file {file_path}: {e}")

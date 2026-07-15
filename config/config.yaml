@@ -9,3 +9,7 @@ data_validation:
   root_dir: artifacts/data_validation
   report_file_path: artifacts/data_validation/report.yaml
   report_page_file_path: artifacts/data_validation/report.html
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  training_data: artifacts/data_transformation/training_data.csv

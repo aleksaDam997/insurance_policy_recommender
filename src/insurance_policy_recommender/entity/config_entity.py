@@ -21,3 +21,9 @@ class DataValidationConfig:
         self.report_file_path = report_file_path
         self.report_page_file_path = report_page_file_path
         self.schema = schema
+
+class DataTransformationConfig:
+    def __init__(self, root_dir: Path, training_data: Path, schema: dict):
+        self.root_dir = root_dir
+        self.training_data = training_data
+        self.schema = schema

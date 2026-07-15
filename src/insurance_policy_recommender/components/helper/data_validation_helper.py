@@ -1,13 +1,28 @@
 import pandas as pd
 import re
 
+class UsedColumnReport:
+    def __init__(self, table_name: str, column_name: str, fill_rate: float, nunique: int):
+        self.table_name = table_name
+        self.column_name = column_name
+        self.fill_rate = float(fill_rate)
+        self.nunique = int(nunique)
+
+    
+    def to_dict(self):
+        return {
+            "table_name": self.table_name,
+            "column_name": self.column_name,
+            "fill_rate": self.fill_rate,
+            "nunique": self.nunique
+        }
 class ValidationReport:
 
     def __init__(self):
         self.IS_VALID: bool = True
         self.errors: list[str] = []
         self.warnings: list[str] = []
-        self.used_columns: list[str] = []
+        self.used_columns: list[UsedColumnReport] = []
         self.excess_columns: list[str] = []
 
     def error(self, msg: str):
@@ -16,8 +31,8 @@ class ValidationReport:
     def warn(self, msg: str):
         self.warnings.append(msg)
 
-    def info_add_used_column(self, msg: str):
-        self.used_columns.append(msg)
+    def info_add_used_column(self, used_column: UsedColumnReport):
+        self.used_columns.append(used_column)
 
     def info_add_excess_column(self, msg: str):
         self.excess_columns.append(msg)
@@ -25,22 +40,18 @@ class ValidationReport:
     def ok(self) -> bool:
         self.IS_VALID = len(self.errors) == 0
         return self.IS_VALID
-
-    def print_summary(self):
-        print("\n" + "=" * 70)
-        print("VALIDACIONI IZVJEŠTAJ")
-        print("=" * 70)
-        if not self.errors and not self.warnings:
-            print("✅ Sve provjere prošle bez primjedbi.")
-        if self.errors:
-            print(f"\n❌ HARD ERRORS ({len(self.errors)}):")
-            for e in self.errors:
-                print(f"   - {e}")
-        if self.warnings:
-            print(f"\n⚠️  WARNINGS ({len(self.warnings)}):")
-            for w in self.warnings:
-                print(f"   - {w}")
-        print("=" * 70)
+    
+    def to_dict(self):
+        return {
+            "IS_VALID": self.IS_VALID,
+            "errors": self.errors,
+            "warnings": self.warnings,
+            "used_columns": [
+                x.to_dict()
+                for x in self.used_columns
+            ],
+            "excess_columns": self.excess_columns
+        }
 
 # ------------------------------------------------------------------
 # Mapiranje logičkog schema['type'] -> pandas provjera
@@ -99,6 +110,8 @@ def _is_datetime_like(series: pd.Series) -> bool:
 def _is_string_like(series: pd.Series) -> bool:
     # gotovo sve prolazi kao string (pandas object/num), ovo je slaba provjera
     return True
+
+
 
 
 TYPE_CHECKERS = {

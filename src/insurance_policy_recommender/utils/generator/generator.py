@@ -67,6 +67,15 @@ def validation_report_to_html(report: dict) -> str:
                     color: #ff9800;
                 }}
 
+                .fill-low {{
+                    color: #dc3545;
+                    font-weight: bold;
+                }}
+
+                .fill-mid {{
+                    color: #ff9800;
+                }}
+
                 table {{
                     width: 100%;
                     border-collapse: collapse;
@@ -165,27 +174,53 @@ def validation_report_to_html(report: dict) -> str:
                 </tr>
                 """
 
-    for col in excess_columns:
-        html += f"<tr><td>{escape(str(col))}</td></tr>"
+    if excess_columns:
+        for col in excess_columns:
+            html += f"<tr><td>{escape(str(col))}</td></tr>"
+    else:
+        html += "<tr><td>Nema viška kolona.</td></tr>"
 
     html += """
                 </table>
                 </div>
                 """
 
-                    # Used columns
+    # Used columns — sada su UsedColumnReport objekti, ne stringovi
     html += """
                 <div class="card">
                 <h2>Korištene kolone</h2>
 
                 <table>
                 <tr>
+                <th>Tabela</th>
                 <th>Kolona</th>
+                <th>Fill rate</th>
+                <th>Broj jedinstvenih vrijednosti</th>
                 </tr>
                 """
 
-    for col in used_columns:
-        html += f"<tr><td>{escape(str(col))}</td></tr>"
+    if used_columns:
+        # sortiramo po fill_rate rastuće da problematične kolone budu vidljive prve
+        sorted_cols = sorted(used_columns, key=lambda c: c.fill_rate)
+        for col in sorted_cols:
+            fill_rate = col.fill_rate
+            if fill_rate < 50:
+                fill_class = "fill-low"
+            elif fill_rate < 90:
+                fill_class = "fill-mid"
+            else:
+                fill_class = ""
+
+            html += (
+                "<tr>"
+                f"<td>{escape(str(col.table_name))}</td>"
+                f"<td>{escape(str(col.column_name))}</td>"
+                f"<td class='{fill_class}'>{fill_rate}%</td>"
+                f"<td>{col.nunique}</td>"
+                "</tr>"
+            )
+    else:
+        html += "<tr><td colspan='4'>Nema korištenih kolona.</td></tr>"
 
     html += """
                 </table>

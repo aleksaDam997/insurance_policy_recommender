@@ -21,6 +21,7 @@ class DataIngestion:
         policy_client_data_destination_path = self.config.raw_data_dir / POLICY_CLIENT_DATA_FILE_NAME
         policy_type_data_destination_path = self.config.raw_data_dir / POLICY_TYPE_FILE_NAME
         client_roles_data_destination_path = self.config.raw_data_dir / CLIENT_ROLES_FILE_NAME
+
         try:
 
             # Copying the source files to the raw data directory

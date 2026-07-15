@@ -49,7 +49,7 @@ schema:
 
       ind_zamena:
         type: string
-        dtype: string
+        dtype: str
         required: false
         used_by_pipeline: true
 
@@ -73,7 +73,7 @@ schema:
 
       ugo_jmbg:
         type: string
-        dtype: string
+        dtype: str
         required: false
         dtype_cast: str
 
@@ -85,27 +85,27 @@ schema:
 
       ugo_naziv:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_naziv1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_ulica:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_kuc_br:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_mesto:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_posta:
@@ -130,22 +130,22 @@ schema:
 
       ugo_telefon1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_telefon2:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_mail:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_jmbg:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_svojina:
@@ -155,27 +155,27 @@ schema:
 
       osig_naziv:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_naziv1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_ulica:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_kuc_br:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_mesto:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_posta:
@@ -200,17 +200,17 @@ schema:
 
       osig_telefon1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_telefon2:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_mail:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       sif_trajanja:
@@ -240,12 +240,12 @@ schema:
 
       time_od:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       time_do:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       br_dana:
@@ -255,7 +255,7 @@ schema:
 
       mesto_izdavanja:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       dat_izdavanja:
@@ -266,22 +266,22 @@ schema:
 
       mjesto_izdavanja:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       napomena:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       napomena_auto:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       napomena1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       p_oper:
@@ -326,17 +326,17 @@ schema:
 
       opis_osiguravac:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_user_skadenca:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_obracun:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       suma_osiguranja:
@@ -346,17 +346,17 @@ schema:
 
       polisa_tarifa:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       veza_polise_no:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_lock_skadenca:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       miro_polisa_no:
@@ -366,27 +366,27 @@ schema:
 
       uw_indikator:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_uw_kontrola:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_dug:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_steta:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       registarski_broj_polise:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       akcija_id:
@@ -396,7 +396,7 @@ schema:
 
       ind_nepravilni_otp_plan:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       king_id:
@@ -411,12 +411,12 @@ schema:
 
       osig_br_pasosa:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_isprava:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       sif_bankovni_racun:
@@ -440,17 +440,17 @@ schema:
         required: false
       ugo_br_pasosa:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_del:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ugo_isprava:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
   new_polisa_klijent:
@@ -472,7 +472,7 @@ schema:
 
       osig_jmbg:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       klijent_id:
@@ -488,7 +488,7 @@ schema:
 
       br_pasosa:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       datum_rodjenja:
@@ -513,7 +513,7 @@ schema:
 
       nedef_delatnost:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       sif_bracni_status:
@@ -527,7 +527,7 @@ schema:
 
       ind_info_ponuda:
         type: string
-        dtype: string 
+        dtype: str 
         required: false
 
       king_id:
@@ -537,7 +537,7 @@ schema:
 
       mesto_rodj:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_kanton:
@@ -547,17 +547,17 @@ schema:
 
       osig_kuc_br:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_mail:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_mesto:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_mesto_id:
@@ -567,12 +567,12 @@ schema:
 
       osig_naziv:
         type: string  
-        dtype: string
+        dtype: str
         required: false
 
       osig_naziv1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_posta:
@@ -582,22 +582,22 @@ schema:
 
       osig_svojina:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_telefon1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_telefon2:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       osig_ulica:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       procenat:
@@ -628,22 +628,27 @@ schema:
 
       mat_br:
         type: string
-        dtype: string
+        dtype: str
+        required: false
+
+      naziv:
+        type: string
+        dtype: str
         required: false
 
       ind_rezident:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_stranac:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       br_pasosa:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       datum_rodjenja:
@@ -667,7 +672,7 @@ schema:
         required: false
       mesto_rodj:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       king_id:
@@ -677,11 +682,11 @@ schema:
 
       naziv1:
         type: string
-        dtype: string
+        dtype: str
         required: false
       nedef_delatnost:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       sif_bracni_status:
@@ -710,61 +715,61 @@ schema:
 
       ind_polisa:
         type: string
-        dtype: string
+        dtype: str
         required: true
         pipeline_role: hard_filter
       ind_akt:
         type: string 
-        dtype: string
+        dtype: str
         required: false
 
       ind_blok:
         type: string
-        dtype: string
+        dtype: str
         required: false
       ind_cent:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_empty:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_fin_analitika:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_foto:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_kontrola_upl:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_takse:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       ind_tehnicki:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       kasko:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       kontrola_polisa_od:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       korisnik_id:
@@ -779,12 +784,12 @@ schema:
 
       modul:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       opis:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       poc_polisa_no:
@@ -814,41 +819,41 @@ schema:
 
       skr_opis:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       var_poreza:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       where_do:
         type: string
-        dtype: string
+        dtype: str
         required: false
       where_do1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       where_kontrola:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       where_nalog:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       where_od:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
       where_od1:
         type: string
-        dtype: string
+        dtype: str
         required: false
 
   new_polisa_uloga:
@@ -864,7 +869,7 @@ schema:
 
       opis:
         type: string
-        dtype: string
+        dtype: str
         required: true
         pipeline_role: hard_filter
 

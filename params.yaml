@@ -1,1 +1,43 @@
 model_name: "insurance_policy_recommender_model"
+
+_TRAIN_MODEL: True
+ 
+USE_APRIORI_AS_FEATURE: True
+BLEND_APRIORI: False   # ← PROMIJENJENO: bio False
+BLEND_MARKOV_PROBS: False
+INCLUDE_SEGMENT_MARKOV: False
+USE_MARKOV_PROBS_AS_FEATURE: True
+INCLUDE_CLIENT_CLUSTERS: False
+INCLUDE_RENEWAL_FEATURES: True
+INCLUDE_SEASONAL_FEATURES: True
+INCLUDE_POPULARITY_FEATURES: True
+INCLUDE_EMBEDDING_MAP: True
+DO_NEGATIVE_SAMPLING: False
+USE_CATBOOST: False
+ 
+HR1_WEIGHT: 0.0
+HR3_WEIGHT: 0.4
+HR5_WEIGHT: 0.0
+MRR3_WEIGHT: 0.0
+MRR5_WEIGHT: 0.0
+NDCG3_WEIGHT: 0.6
+NDCG5_WEIGHT: 0.0
+ 
+OPTUNA_NTRIALS: 88
+ 
+APRIORI_MIN_SUPP: 0.01
+APRIORI_MIN_CONFIDENCE: 0.1
+ 
+NUM_KMEANS_CLUSTERS: 7
+ 
+# Početne težine — Optuna će ih optimizovati
+W_LGBM: 0.5   # ← malo smanjeno da ostavi prostora za apriori
+W_XGBM: 0.5
+W_CAT: 0.0
+W_MARKOV: 0.0
+W_APRIORI: 0.0   # ← PROMIJENJENO: bio 0.0
+ 
+# RRF smoothing parametar — standardno 60, ali Optuna može tunirati
+W_RRF_K: 60
+
+EMB_COMPONENTS: 8  # konstanta na vrhu notebooka
